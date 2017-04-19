@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   </head>
   <body ng-app="yoApp" ng-controller="MainCtrl">
@@ -35,10 +36,14 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#!/">test</a></li>
-              <li class=""><a href="#!/charge">Заряд АКБ</a></li>
-              <li class=""><a href="#!/power">Блок питания</a></li>
-              <li><a href="#!/settings">Настройки</a></li>
+              <li class=""><a href="#!/">ТЕСТ</a></li>
+              <!-- <li class=""><a href="#!/charge">ЗАРЯД АКБ</a></li> -->
+              <li class=""><a href="#!/charge">СЕРВИС АКБ</a></li>
+              <!-- <li class=""><a href="#!/power">БЛОК ПИТАНИЯ</a></li> -->
+              <li><a href="#!/settings">
+                <i class="fa-cog fa fa-fw"></i>
+                НАСТРОЙКИ
+              </a></li>
               <!-- <li><a ng-href="/edit">Редактор</a></li> -->
             </ul>
             <div class="label-warning" ng-show="wsStatus">
@@ -70,20 +75,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-          <a href="http://supportdownload.apple.com/download.info.apple.com/Apple_Support_Area/Apple_Software_Updates/Mac_OS_X/downloads/061-8098.20100603.gthyu/BonjourPSSetup.exe" class="navbar-brand">
+          <!-- <a href="http://supportdownload.apple.com/download.info.apple.com/Apple_Support_Area/Apple_Software_Updates/Mac_OS_X/downloads/061-8098.20100603.gthyu/BonjourPSSetup.exe" class="navbar-brand">
 
             bonjour
-          </a>
+          </a> -->
 
         </div>
-        <div class=" center-block">
-          <!-- <div class="col-xs-4">
-            <button class="btn btn-danger  btn-block  navbar-btn " ng-click="error()">назад</button>
-
-          </div> -->
-          <div class="btn-group  navbar-right ">
-            <button class="btn btn-warning  navbar-btn " ng-click="success('сохранение')">сохранить</button>
-            <button class="btn btn-success navbar-btn " ng-click="wsSend()">пуск</button>
+        <div class="row">
+          <div class="col-xs-6">
+            <button disabled class="btn btn-success  btn-block  navbar-btn " ng-click="success('сохранение')">сохранить</button>
+          </div>
+          <div class="col-xs-6">
+            <button class="btn btn-info  btn-block  navbar-btn " ng-click="wsSend()">пуск</button>
           </div>
         </div>
 
