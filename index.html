@@ -6,7 +6,10 @@
     <meta name="description" content="Кулон 912">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/vendor.css">
+
     <link rel="stylesheet" href="styles/main.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   </head>
@@ -100,19 +103,30 @@
 
     <script type="text/ng-template" id="bslider.html">
       <div class="form-group form-horizontal bslider">
-        <div class="row">
-          <div class="col-xs-9">
             <label class="control-label">
               <ng-transclude></ng-transclude>
+              <span class="label label-primary">{{defs.key}}</span>
             </label>
-            <slider class="bslider-slider" ng-model="bindModel" min="defs.min" step="defs.step" max="defs.max"></slider>
+            <div class="flex">
+              <slider class="middle" ng-model="bindModel" min="defs.min" step="defs.step" max="defss.max" value="def.value"></slider>
+              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control form-control-range big right" ng-model="bindModel">
+            </div>
 
-          </div>
-          <div class="col-xs-3">
-            <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control big" ng-model="bindModel">
-            <span class="big absolute">{{defs.key}}</span>
-          </div>
-        </div>
+      </div>
+    </script>
+    <script type="text/ng-template" id="rangeslider.html">
+      <div class="form-group form-horizontal bslider">
+            <label class="control-label">
+              <ng-transclude></ng-transclude>
+              <span class="label label-primary">{{defs.key}}</span>
+            </label>
+            <div class="flex">
+
+              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control big left" ng-model="bindModel[0]">
+              <slider class="middle" ng-model="bindModel" min="defs.min" range="true" step="defs.step" max="defss.max" value="def.value"></slider>
+              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control big right" ng-model="bindModel[1]">
+            </div>
+
       </div>
     </script>
     <script src="scripts/vendor.js"></script>
