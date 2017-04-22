@@ -12,7 +12,7 @@
 
     <!-- <meta name="HandheldFriendly" content="true"> -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/vendor.css">
+
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -108,34 +108,7 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <script type="text/ng-template" id="bslider.html">
-      <div class="form-group form-horizontal bslider">
-            <label class="control-label">
-              <ng-transclude></ng-transclude>
-              <span class="label label-primary">{{defs.key}}</span>
-            </label>
-            <div class="flex">
-              <slider class="middle" ng-model="bindModel" min="defs.min" step="defs.step" max="defss.max" value="def.value"></slider>
-              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control form-control-range big right" ng-model="bindModel">
-            </div>
 
-      </div>
-    </script>
-    <script type="text/ng-template" id="rangeslider.html">
-      <div class="form-group form-horizontal bslider">
-            <label class="control-label">
-              <ng-transclude></ng-transclude>
-              <span class="label label-primary">{{defs.key}}</span>
-            </label>
-            <div class="flex">
-
-              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control big left" ng-model="bindModel[0]">
-              <slider class="middle" ng-model="bindModel" min="defs.min" range="true" step="defs.step" max="defss.max" value="def.value"></slider>
-              <input type="number"  min="{{defs.min}}" step="{{defs.step}}" max="{{defs.max}}" class="form-control big right" ng-model="bindModel[1]">
-            </div>
-
-      </div>
-    </script>
     <script src="scripts/vendor.js"></script>
 
         <script src="scripts/scripts.js"></script>
