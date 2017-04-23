@@ -1,0 +1,113 @@
+{
+  "AkbU": "",
+  "AkbAh": "",
+  "stat_m": "",
+  "tekU": "",
+  "tekI": "",
+  "smainZU": {
+    "val": 1,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "slastZU": {
+    "val": 1,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "smainZI": {
+    "val": 2,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "msetDU": {
+    "val": 1,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "msetDI": {
+    "val": 1,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "msetWT": {
+    "val": 1,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "smainZR": true,
+  "smainZRQ": {
+    "val": 2,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "smainZRD": {
+    "val": 4,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "slastZF": true,
+  "slastZFI": {
+    "val": 3,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "slastZFT": {
+    "val": 3,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "srvDopCh": true,
+  "srvlowZI": {
+    "val": 4,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "srvlowZT": {
+    "val": 5,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "srvlowZH": {
+    "val": 5,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "mScn": {
+    "val": 5,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "fdis": true,
+  "fdisFU": {
+    "val": 5,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "fdisFI": {
+    "val": 3,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  },
+  "fdisT": {
+    "val": 2,
+    "min": 0,
+    "max": 99,
+    "step": 1
+  }
+}
