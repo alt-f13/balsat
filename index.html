@@ -41,9 +41,7 @@
             <a class="navbar-brand" href="#/">
               <img src="/images/balsat.png" alt="">
             </a>
-            <button ng-click="advModeToggle()" type="button" class="btn btn-warning navbar-btn navbar-left">
-              РАСШИРЕННЫЙ РЕЖИМ
-            </button>
+
           </div>
 
 
@@ -51,9 +49,14 @@
 
             <ul class="nav navbar-nav">
               <li class=""><a href="#!/">ТЕСТ</a></li>
-              <li class=""><a href="#!/srv_akb">ЗАРЯД АКБ</a></li>
-              <li class=""><a href="#!/ch_akb">СЕРВИС АКБ</a></li>
-              <!-- <li class=""><a href="#!/power">БЛОК ПИТАНИЯ</a></li> -->
+              <li class=""><a href="#!/ch_akb">ЗАРЯД АКБ</a></li>
+              <li class=""><a href="#!/srv_akb">СЕРВИС АКБ</a></li>
+              <li class="">
+                <a href="#!/bp">
+
+                БЛОК ПИТАНИЯ
+                </a>
+              </li>
               <li><a href="#!/settings">
                 <i class="fa-cog fa fa-fw"></i>
                 НАСТРОЙКИ
@@ -97,10 +100,10 @@
         </div>
         <div class="row">
           <div class="col-xs-6">
-            <button disabled class="btn btn-success  btn-block  navbar-btn " ng-click="success('сохранение')">сохранить</button>
+            <button disabled class="btn btn-success  btn-block btn-r navbar-btn " ng-click="success('сохранение')">сохранить</button>
           </div>
           <div class="col-xs-6">
-            <button class="btn btn-primary  btn-block  navbar-btn " ng-click="wsSend()">пуск</button>
+            <button class="btn btn-primary  btn-block btn-r navbar-btn " ng-click="wsSend()">пуск</button>
           </div>
         </div>
 
