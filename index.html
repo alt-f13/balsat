@@ -34,7 +34,7 @@
     <!-- Add your site or application content here -->
     <div class="header">
       <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
           <div class="navbar-header">
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -69,9 +69,8 @@
               </a></li>
               <!-- <li><a ng-href="/edit">Редактор</a></li> -->
             </ul>
-            <div class="label-warning" ng-show="wsStatus">
-            </div>
-            <form class="navbar-form navbar-right" name='ws-ip' ng-submit="wsConnect(ip)">
+
+            <!-- <form class="navbar-form navbar-right" name='ws-ip' ng-submit="wsConnect(ip)">
               <div  ng-show="!wsStatus()"  class="form-group">
                 <input type="text" name='ip' ng-model='ip' class="form-control" placeholder="ip" value="esp8266fs.local.">
                 <button  type="submit" class="btn btn-success">Ok</button>
@@ -79,8 +78,10 @@
               </div>
               <span class="label label-danger"  ng-show="!wsStatus()">ws disconnected</span>
               <span class="label label-success"  ng-show="wsStatus()">ws connected</span>
-            </form>
+            </form> -->
           </div>
+        </div>
+        <div class="label-warning pull-right" ng-show="wsStatus">
         </div>
       </nav>
     </div>
