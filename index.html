@@ -45,9 +45,9 @@
           </div>
         </div>
         <div class="btn-group pull-right" ui-yield-to="action">
-          <!-- <div ui-toggle="uiSidebarRight" class="btn">
-            <i class="fa fa-play-circle fa-fw"></i> старт
-          </div> -->
+          <a href="#!/running" ng-click="sendForm(form)" class="btn sidebar-right-toggle uppercase">
+            старт <i class="fa fa-play"></i>
+          </a>
         </div>
       </div>
 
@@ -60,13 +60,15 @@
           <a href="#!/bp/prof0" ng-class="{ active:isActive('/bp')}" class="btn btn-default btn-navbar Fz(10px) Lh(1)">
             <div class="Mx(a) D(ib)">
               <i class="fa fa-fw fa-plug"></i>
-              Блок
-              <br>
-              питания
+              <span>
+                Блок
+                <br>
+                питания
+              </span>
             </div>
           </a>
           <a href="#!/srv_akb/prof0" ng-class="{ active: isActive('/srv_akb')}" class="btn btn-default btn-navbar">
-            <i class="fa fa-refresh fa-spin fa-fw"></i>
+            <i class="fa fa-refresh fa-fw"></i>
             СЕРВИС
           </a>
         </div>
