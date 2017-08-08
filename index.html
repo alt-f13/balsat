@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#191717">
 
     <link rel="stylesheet" href="css/app.min.css" />
-    <script src="http://localhost:8001/target/target-script-min.js"></script>
+    <script src="http://10.0.1.99:8001/target/target-script-min.js#anonymous"></script>
     <script src="cordova.js"></script>
     <script src="js/app.min.js"></script>
   </head>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="btn-group pull-right" ui-yield-to="action">
-          <a href="#!/running" ng-click="sendForm(form)" class="btn sidebar-right-toggle uppercase">
+          <a href ng-click="sendForm(form)" class="btn sidebar-right-toggle uppercase">
             старт <i class="fa fa-play"></i>
           </a>
         </div>
