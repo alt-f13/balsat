@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#191717">
 
     <link rel="stylesheet" href="css/app.min.css" />
-    <script src="http://10.0.1.99:8001/target/target-script-min.js#anonymous"></script>
+    
     <script src="js/app.min.js"></script>
   </head>
   <body ng-app="Q912" ng-controller="MainCtrl">
@@ -38,7 +38,7 @@
         <div class="navbar-brand navbar-brand-center text-uppercase" ui-yield-to="title">
           Кулон 912
         </div>
-        <div class="btn-group pull-left">
+        <div class="btn-group pull-left" ui-yield-to="menu">
           <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
             <i class="fa fa-bars"></i> Меню
           </div>
